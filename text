@@ -1,0 +1,12 @@
+ <div class="container mt-5">
+        <div class="row ">
+            <div class="col-sm-12 col-md-7 col-lg-7 border border-1 border-danger d-flex align-items-center ">
+               <div class="text-center">
+                <p class="fs-3 ">ชีวิตมีหลายเส้นทางให้เลือก อย่าฝากความฝันทั้งหมดไว้กับการตัดสินใจครั้งเดียว</p>
+                <p class="">"บางครั้ง เส้นทางเดียวที่เราเลือก อาจไม่ใช่เส้นทางที่ดีที่สุด จงเปิดใจให้กว้าง แล้วให้โอกาสตัวเองได้เดินผ่านหลากหลายเส้นทาง เพราะฝันใหญ่ไม่ได้ขึ้นอยู่กับการตัดสินใจแค่ครั้งเดียว</p>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5 border-1 border border-danger d-flex justify-content-center">
+                <a class="img-fluid " href="#"><img src="/img/1000265193_front_XXL.jpg" alt=""></a>
+            </div>
+        </div>
