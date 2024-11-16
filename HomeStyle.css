@@ -106,3 +106,36 @@ body {
     color: white;
     border:solid 2px #861BA9;
 }
+.box-1-class-3 img{
+    width: 100%;
+}
+.box-1-class-3 img:hover{
+    transform: scale(1.02);/* ขยายเล็กน้อยเหมือนใจเค้า */
+    transition: 0.2s; /*เวลาในการ transform*/
+}
+
+.box-1-class-3{
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    gap: 10px;
+}
+.box-2-class-3{
+    flex-basis: 66%;
+}
+.box-3-class-3{
+    flex-basis: 66%;
+}
+.box-4-class-4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+@media (max-width: 576px) {
+    .box-1-class-3{
+        max-width: 1200px;
+        margin:auto;
+        display: block;
+        gap: 20px;
+    }
+}
