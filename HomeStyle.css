@@ -92,7 +92,7 @@ body {
 }
 
 .imgboxproduct-css-hover-product:hover {
-    transform: scale(1.01   ); 
+    transform: scale(1.01);
 }
 
 /*จริงๆมันเป็น class ของ bootstrap เเต่ฉันเอามาเปลี่ยนสีเเต่งใหม่เเม่ง*/
@@ -102,7 +102,7 @@ body {
     color: #861BA9;;
 }
 .btn-outline-info:hover{
-    background:#861BA9;;
+    background:#861BA9;
     color: white;
     border:solid 2px #861BA9;
 }
@@ -110,7 +110,7 @@ body {
     width: 100%;
 }
 .box-1-class-3 img:hover{
-    transform: scale(1.02);/* ขยายเล็กน้อยเหมือนใจเค้า */
+    transform: scale(1.01);/* ขยายเล็กน้อยเหมือนใจเค้า */
     transition: 0.2s; /*เวลาในการ transform*/
 }
 
