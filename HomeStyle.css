@@ -78,6 +78,13 @@ body {
     max-width: 100%;
     height: 220px;
 }
+/* .img-css-hover-product-1 img{
+    height: 410px;
+} */
+.img-css-box-5 img{
+    max-width: 100%;
+    height: 100px;
+}
 
 .display-none-button {
     opacity: 0; /*ซ่อน btn ใว้ ก่อน โดนใช้ opacity 0 */

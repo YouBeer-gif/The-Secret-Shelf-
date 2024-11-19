@@ -5,13 +5,13 @@ function id_1() {
         index++; 
         document.getElementById('input').innerText = index; 
     }else {
-        alert("สินค้าไม่เกิน 9 ต่อ 1 บิน");
+        alert("เกิน9เเล้วนะจ้ะ");
     }
 }
 
 function onclickimg() {
     document.getElementById('open').style.display = 'block'; 
-    document.getElementById('promotions').style.display = 'block';
+    document.getElementById('promotions').style.display = 'none';
 }
 function openimgbox2_1() {
     document.getElementById('open').style.display = 'none'; 
