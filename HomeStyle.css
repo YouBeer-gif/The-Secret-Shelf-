@@ -78,9 +78,9 @@ body {
     max-width: 100%;
     height: 220px;
 }
-/* .img-css-hover-product-1 img{
+.img-css-hover-product-1 img{
     height: 410px;
-} */
+}
 .img-css-box-5 img{
     max-width: 100%;
     height: 100px;
@@ -106,7 +106,11 @@ body {
 .btn-outline-info{
     background: #ffffff;
     border:solid 2px #861BA9;
-    color: #861BA9;;
+    color: #861BA9;
+    border-radius: 9999px;
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 20px;
 }
 .btn-outline-info:hover{
     background:#861BA9;
