@@ -1,0 +1,154 @@
+body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #861BA9;
+    
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.item-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.item-total {
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.remove-btn {
+    background-color: #861BA9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-summary h3 {
+    margin: 0;
+    color: #333;
+}
+
+#total-amount {
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #3c9ff0;
+}
+.css-style{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.css-style2{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+    margin: 10px;
+    margin-left: 45px;
+}
+
+/* NewNav/HomeStyle.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Sarabun", sans-serif;
+}
+.bordercss {
+    border: solid 1.5px #861BA9;
+    background-color: #fcf7fd;
+    box-shadow: 0px 5px 5px rgba(134, 27, 169, 0.3);
+}
+
+.bordercss:hover {
+    box-shadow: 0px 6px 12px rgba(134, 27, 169, 0.5); /* เงาน้อยๆเหมือนใจเค้า */
+    transform: scale(1.01);/* ขยายเล็กน้อยเหมือนใจเค้า */
+    transition: 0.3s; /*เวลาในการ transform*/
+}
+.border_css_nav{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-menu{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-item:hover{
+    background: #faf9fa; /*เปลี่ยนสี Text dropdown-itme เพราะเเม่งเป็นสีเทา*/
+    transition:0.3s ease; /*เวลาในการ hover*/
+    border-radius: 0.4rem;
+}
+.ri-heart-fill:hover ,.ri-shopping-cart-fill:hover {
+    color: #861BA9;
+    transition:0.2s ease; /*เวลาในการ hover*/
+}
+.nav-linK_Home_css{
+    color: #861BA9;
+}
+.nav-link_item_css a:hover{
+    color: #861BA9;
+    transition:0.3s ease; /*เวลาในการ hover*/
+}
+.ri-shopping-cart-fill{
+    color: #861BA9;
+}

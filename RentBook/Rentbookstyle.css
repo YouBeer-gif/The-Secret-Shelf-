@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: "Sarabun", sans-serif;
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    color: black; /* สีข้อความเป็นสีดำ */
+}
+h4{
+    color: black; /* สีข้อความเป็นสีดำ */
+}
+.book-card img{
+    object-fit: cover; /* ครอบภาพให้เต็มกรอบ */
+    height: 300px; /* ความสูงของภาพ */
+    width: 100%; /* ปรับขนาดให้เต็มคอลัมน์ */
+}
+.book-card p{
+    font-size: 0.9rem; /* ขนาดข้อความ */
+    margin: 10px; /* ลดระยะห่าง */
+    color: black; /* สีข้อความเป็นสีดำ */
+}
+#extra-books {
+    display: none; /* เริ่มต้นซ่อน */
+}
+#fantasy-extra-books {
+    display: none; /* ซ่อนหนังสือเมื่อโหลดหน้า */
+}
+#extra-books .book-card {
+    margin: 0 auto; /* จัดกึ่งกลางการ์ด */
+    max-width: 100%; /* กำหนดให้ Book Card ไม่ใหญ่เกินคอลัมน์ */
+}
+.row.text-center {
+    margin-left: 0;
+    margin-right: 0;
+}
+#view-all-link:hover {
+    cursor: pointer;
+}
+/* Flexbox for header */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col-md-2 {
+    width: 20%;
+}
+
+
+/* Box-detail CSS */
+
+.MainBox {
+    /* background-color: #333; */
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 600px;
+    /* max-width: 33vw; */
+    width: 60%;
+    position: fixed;
+    height: fit-content;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: none;
+}
+
+/* .boxMenuDetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 33vw;
+    min-width: 500px;
+} */
+
+/* Overall box styling */
+.boxMenuDetail {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 16px; /* Add spacing between the two columns */
+    /* width: 33vw; */
+    min-width: 500px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .boxMenuDetail {
+        grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+        width: 80vw;
+    }
+}
+
+/* Image container styling */
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+}
+
+/* Styling for the image */
+#img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Detail section styling */
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Close button styling */
+#closeBox {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#closeBox:hover {
+    color: #fff;
+}
+
+/* Book name styling */
+#nameBook {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Writer name styling */
+#writer {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Description text styling */
+#description {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Add subtle hover effect for the whole box */
+
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail {
+    color: #fff;
+    padding: 20px;
+}
+
+#nameBook {
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#writer {
+    font-size: 18px;
+    color: #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#closeBox {
+    position: relative;
+    float: right;
+    border: none;
+    text-transform: lowercase;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#closeBox:hover {
+    background-color: red;
+    border-radius: 50px;
+}

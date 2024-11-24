@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Sarabun", sans-serif;
+}
+.bordercss {
+    border: solid 1.5px #861BA9;
+    background-color: #fcf7fd;
+    box-shadow: 0px 5px 5px rgba(134, 27, 169, 0.3);
+}
+
+.bordercss:hover {
+    box-shadow: 0px 6px 12px rgba(134, 27, 169, 0.5); /* เงาน้อยๆเหมือนใจเค้า */
+    transform: scale(1.01);/* ขยายเล็กน้อยเหมือนใจเค้า */
+    transition: 0.3s; /*เวลาในการ transform*/
+}
+.border_css_nav{
+    border: solid 1.5px #861BA9; 
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-menu{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-item:hover{
+    background: #faf9fa; /*เปลี่ยนสี Text dropdown-itme เพราะเเม่งเป็นสีเทา*/
+    transition:0.3s ease; /*เวลาในการ hover*/
+    border-radius: 0.4rem;
+}
+.ri-heart-fill:hover ,.ri-shopping-cart-fill:hover {
+    color: #861BA9;
+    transition:0.2s ease; /*เวลาในการ hover*/
+}
+.nav-linK_Home_css{
+    color: #861BA9;
+}
+.nav-link_item_css a:hover{
+    color: #861BA9;
+    transition:0.3s ease; /*เวลาในการ hover*/
+}

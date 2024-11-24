@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Kanit", "Sarabun", sans-serif;
+    background-color: #f5f5f5; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; 
+}
+.bordercss {
+    border: solid 1.5px #861BA9;
+    background-color: #fcf7fd;
+    box-shadow: 0px 5px 5px rgba(134, 27, 169, 0.3);
+}
+
+.bordercss:hover {
+    box-shadow: 0px 6px 12px rgba(134, 27, 169, 0.5); /* เงาน้อยๆเหมือนใจเค้า */
+    transform: scale(1.01);/* ขยายเล็กน้อยเหมือนใจเค้า */
+    transition: 0.3s; /*เวลาในการ transform*/
+}
+.border_css_nav{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-menu{
+    border: solid 1.5px #861BA9;
+    box-shadow: 0px 5px 15px rgba(134, 27, 169, 0.3);
+}
+.dropdown-item:hover{
+    background: #faf9fa; /*เปลี่ยนสี Text dropdown-itme เพราะเเม่งเป็นสีเทา*/
+    transition:0.3s ease; /*เวลาในการ hover*/
+    border-radius: 0.4rem;
+}
+.ri-heart-fill:hover ,.ri-shopping-cart-fill:hover {
+    color: #861BA9;
+    transition:0.2s ease; /*เวลาในการ hover*/
+}
+.nav-linK_Home_css{
+    color: #861BA9;
+}
+.nav-link_item_css a:hover{
+    color: #861BA9;
+    transition:0.3s ease; /*เวลาในการ hover*/
+}
+
+.bookDetailContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    justify-items : center;
+    align-items: center;
+}
+/* Overall container for content */
+.section00, .minibox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White background for a clean layout */
+    padding: 30px;
+    /* margin: 20px auto; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1520px;
+}
+
+/* Book details styling */
+
+.bigbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.section02 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+#book {
+    font-size: 28px;
+    font-weight: 600;
+    color: #861BA9;
+    margin-bottom: 10px;
+}
+
+.info, .info2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+h2, #info1 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #861BA9;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#buy {
+    background-color: #ffffff;
+    color: #861BA9;
+    font-size: 16px;
+    border: 2px solid #861BA9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#buy:hover {
+    background-color: #861BA9;
+    color: #ffffff;
+}
+
+/* Review box styles */
+.minibox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.star-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.star-box i {
+    font-size: 24px;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+textarea, input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus, input[type="number"]:focus {
+    border-color: #861BA9;
+    outline: none;
+    box-shadow: 0 0 5px #861BA9;
+}
+
+#submit {
+    background-color: #861BA9;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+#submit:hover {
+    box-shadow: 0 4px 10px rgba(134, 27, 169, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Comment section */
+.comment {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+}
+
+/* Typography */
+h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: #861BA9;
+}

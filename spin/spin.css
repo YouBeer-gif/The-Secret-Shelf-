@@ -1,0 +1,180 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0edcc;
+    display: flex;
+    flex-direction: column;  /* เปลี่ยนเป็นแนวตั้ง */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    gap: 20px;  /* เพิ่มระยะห่างระหว่างองค์ประกอบ */
+	min-height: 100vh;
+    overflow-y: auto;
+}
+
+h1 {
+    margin: 0;
+    color: #861BA9;
+    font-family: sans-serif;
+    margin-bottom: 30px;  /* เพิ่มระยะห่างด้านล่างของข้อความ */
+}
+.game-wrapper {
+    position: relative;
+    width: 500px;  /* ให้เท่ากับขนาดของ container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+	width:500px;
+	height:500px;
+	background-color: #861BA9;
+	border-radius:50%;
+	border:15px solid #861BA9;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#ffffff;
+	left:135px;
+}
+
+.container .one{
+	background-color: #861BA9;
+	left:50%;
+}
+.container .two{
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+.container .three{
+	background-color: #861BA9;
+	transform:rotate(90deg);
+}
+.container .four{
+	background-color: #000000;
+	transform: rotate(135deg);
+}
+.container .five{
+	background-color: #861BA9;
+	transform: rotate(180deg);
+}
+.container .six{
+	background-color: #000000;
+	transform: rotate(225deg);
+}
+.container .seven{
+	background-color: #861BA9;
+	transform: rotate(270deg);
+}
+.container .eight{
+	background-color: #000000;
+	transform: rotate(315deg);
+}
+
+.arrow {
+    position: absolute;
+    top: -25px;  /* ปรับระยะห่างจากวงล้อ */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff0000;
+    z-index: 11;  /* ให้อยู่ด้านหน้าสุด */
+}
+
+.arrow::before{
+	content:"\1F817";
+	font-size:70px;
+}
+.prize-list {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+.prize-list h2 {
+    color: #861BA9;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.prizes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    padding: 10px;
+}
+
+.prize-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	width: 100%;
+	
+}
+
+.number {
+    background-color: #861BA9;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.prize-name {
+    color: #333;
+    font-family: sans-serif;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:10;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #000000;
+	font-weight:bold;
+	font-size:20px;
+	color:#ff0000;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
